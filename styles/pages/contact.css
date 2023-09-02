@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Bold'), local('DINNextLTPro-Bold'),
+        url('fonts/DINNext/DINNextLTPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+p {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    
+    text-align: center;
+    margin: 50px;
+    transform: translateY(50%);
+}
+
+.smalldesc {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    margin-left: 75px;
+}
+
+a {
+    font-size: 22px;
+}
+
+a:hover {
+    color: lightblue;
+  }
+
+
+

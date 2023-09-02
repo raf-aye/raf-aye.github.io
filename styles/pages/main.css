@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+
+  .name {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    animation: 1.5s anim-lineUp ease-out normal;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color:whitesmoke;
+    font-size: 72px;
+    display: block;
+    margin-right: auto;
+  }
+
+  .about {
+    position: fixed;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    width: 100%;
+    color:whitesmoke;
+    font-size: 24px;
+    display: block;
+    margin-right: auto;
+
+    animation: 2s anim-lineUp2 ease-out normal;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;  
+    opacity: 0;
+  }
+
+  header {
+    animation: 2s anim-Header ease-out normal;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;  
+    opacity: 0;
+  }
+
+  
+
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 0%);
+    }
+    20% {
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+    }
+    50% {
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+      transform: translate(-50%, -100%);
+    }
+    100% {
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+      transform: translate(-50%, -100%);
+    }
+  }
+
+  @keyframes anim-lineUp2 {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 0%);
+    }
+    20% {
+      top: 61%;
+      left: 50%;
+      opacity: 0;
+    }
+    50% {
+      top: 61%;
+      left: 50%;
+      opacity: 1;
+      transform: translate(-50%, -85%);
+    }
+    100% {
+      top: 61%;
+      left: 50%;
+      opacity: 1;
+      transform: translate(-50%, -85%);
+    }
+  }
+
+  @keyframes anim-Header {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  

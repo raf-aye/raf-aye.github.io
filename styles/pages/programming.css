@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Bold'), local('DINNextLTPro-Bold'),
+        url('fonts/DINNext/DINNextLTPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+:root {
+  --height: -100px;
+  --width: -150px
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+img { width: 1028px; height: 256px; object-fit: contain;}
+
+/* padding for whole body */
+.projects {
+  padding: 50px;
+}
+.container {
+  margin: auto;
+}
+
+h2 {
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin-left: 50px;
+  margin-right: 450px;
+  text-align: center;
+  transform: translate(20%, 50%);
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+/* anchor tag decoration */
+a {
+  text-decoration: none;
+  color: #5673C8;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+/* paragraph tag decoration */
+.desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+/* row and column decoration */
+.row {
+  margin: 0px 28px;
+  padding: 28px;
+  
+}
+
+.row > .column {
+  padding: 26px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-left: 17%;
+  margin-bottom: 5%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* content decoration */
+.content {
+  font-family: "Nunito";
+  color: whitesmoke;
+  background-color: transparent;
+  padding: 25px;
+
+  padding-bottom: auto;
+  border: 1px solid whitesmoke;
+  border-width: 5px;
+  border-radius: 25px;
+  animation-fill-mode: forwards;  
+  transition: 0.25s;
+  
+}
+
+.content:hover {cursor: pointer; transform: scale(105%)}
+
+.translate { 
+  -webkit-animation: moveLeft 1s ease-out normal; -moz-animation: moveLeft 1s ease-out normal; -o-animation: moveLeft 1s ease-out normal; animation: moveLeft 1s ease-out normal;
+  animation-fill-mode: forwards;
+ }
+
+ .translateContent {
+  -webkit-animation: moveContent 0.5s ease-out normal; -moz-animation: moveContent 0.5s ease-out normal; -o-animation: moveContent 0.5s ease-out normal; animation: moveContent 0.5s ease-out normal;
+  animation-fill-mode: forwards;
+ }
+
+.translateDesc {
+  -webkit-animation: moveDesc 1s ease-out normal; -moz-animation: moveDesc 1s ease-out normal; -o-animation: moveDesc 1s ease-out normal;
+  animation: moveDesc 1s ease-out normal;
+  animation-fill-mode: forwards;
+}
+
+.translateImg {
+  -webkit-animation: moveImg 1s ease-out normal; -moz-animation: moveImg 1s ease-out normal; -o-animation: moveImg 1s ease-out normal;
+  animation: moveImg 1s ease-out normal;
+  animation-fill-mode: forwards;
+
+  float: left; scale: 75%;
+}
+ .projectDesc {
+  font-size: 18px;
+  color: whitesmoke;
+  font-family: "Nunito";
+  float: right;
+ }
+
+
+
+@keyframes moveLeft {
+  0% { opacity: 1}
+  50% {opacity: 0; transform: translateX(100px)}
+  100% { opacity: 0; transform: translateX(1300px); display: none; }
+}
+
+
+@keyframes moveContent {
+  25% {
+    width: 250%;
+  }
+  100% {
+    width: 360%;
+    margin-left: -60px;
+    padding-top: 10px;
+    transform: translate(var(--width), var(--height));
+  }
+}
+
+@keyframes moveDesc {
+  0% {opacity: 0; transform: translateY(-200%);}
+  100% {opacity: 1; transform: translateY(-200%);}
+}
+
+@keyframes moveImg { 
+
+  100% {transform: translate(-250px, -7px);}
+}
+
+/* window size 850 width set */
+@media screen and (max-width: 850px) {
+  .column {
+      width: 50%;
+  }
+}
+
+/* window size 400 width set */
+@media screen and (max-width: 400px) {
+  .column {
+      width: 100%;
+  }
+}

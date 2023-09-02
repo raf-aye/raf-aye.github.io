@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Bold'), local('DINNextLTPro-Bold'),
+        url('fonts/DINNext/DINNextLTPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+:root {
+  --height: -100px;
+  --width: -150px
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+.icon { width: 1028px; height: 256px; object-fit:contain; transform: translate(-60px, -25px) scale(80%); float:left;}
+
+/* padding for whole body */
+.projects {
+  padding: 50px;
+}
+.container {
+  margin: auto;
+}
+
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+/* anchor tag decoration */
+a {
+  text-decoration: none;
+  color: #5673C8;
+  
+}
+
+a:hover {
+  color: lightblue;
+}
+
+.github {
+  float: right;
+  transform: scale(35%) translate(20px, -645px);;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.github:hover {
+  -webkit-filter: invert(30%); /* Safari 6.0 - 9.0 */
+  filter: invert(30%);
+}
+
+.back {padding: 80px;}
+
+/* paragraph tag decoration */
+.desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  
+}
+
+/* row and column decoration */
+.row {
+  margin: 0px 28px;
+  padding: 28px;
+}
+
+.row > .column {
+  padding: 26px;
+}
+
+.column {
+
+  width: 25%;
+  margin-left: 17%;
+  margin-bottom: -3.5%;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+}
+
+/* content decoration */
+.content {
+  font-family: "Nunito";
+  color: whitesmoke;
+  background-color: transparent;
+  padding: 25px;
+  margin-top: 75px;
+  border: 1px solid whitesmoke;
+  border-width: 5px;
+  border-radius: 25px;
+  
+  width: 360%;
+  margin-left: -60px;
+
+  transform: translate(-150px, -100px);
+}
+
+
+ .projectDesc {
+  font-size: 18px;
+  color: whitesmoke;
+  font-family: "Nunito";
+  margin: 75px;
+ }
+
+
+

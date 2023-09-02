@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Bold'), local('DINNextLTPro-Bold'),
+        url('fonts/DINNext/DINNextLTPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.me {
+    border-color: whitesmoke;
+    border-style:groove;
+    border-radius: 75px;
+    border-image:round;
+    width: 500px;
+    height: 750px;
+    object-fit: cover;
+    transform: scale(75%);
+    position: relative;
+    top:-105px;
+    margin-left: auto;
+    float:left;
+
+}
+
+.hello {
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+    color:whitesmoke;
+    font-size: 48px;
+    display: block;
+    
+    margin-right: auto;
+}
+
+.description {
+    font-family: 'Nunito', sans-serif;
+    color:whitesmoke;
+    font-size: 24px;
+    display: block;
+    margin-right: auto;
+    margin-right: 10px;
+}
+
+.language {
+    font-family: 'Montserrat', sans-serif;
+    color:whitesmoke;
+    font-size: 48px;
+    transform: translateX(-15%);
+    text-align: center;
+}
+
+
+  .row {
+    display: flex;
+    transform: translateX(-23%);
+  }
+  
+  .column {
+    flex: 20%;
+    padding: 5px;
+  }
+
+  .column2 {
+    flex: 25%;
+    padding: 5px;
+  }
+
+ 

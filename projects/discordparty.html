@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/projects/discord.css">
+        <script defer src="../scripts/script.js"></script>
+        <link rel="stylesheet" href="../styles/ui/background.css">
+        <link rel="stylesheet" href="../styles/ui/header.css">
+        <link rel="stylesheet" href="../styles/ui/fade.css">
+        <title style="font-size: 0;">Discord Party</title>
+        <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <pYou are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <header>
+            <a class="logo" style="text-align:center;" href="../index.html">rB</title>
+                <nav>
+                    <ul class="navigate_links">
+                        <li><a href="../about.html">About Me</a></li>
+                        <li><a href="../programming.html">Programming</a></li>
+                        <li><a href="../media.html">Visual Media</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <a href = "../programming.html" class = "back">< Back</a>
+       <div class = "projects" id = "projects">
+        
+            <div class="column">
+            
+                <div class="content" style = "text-align: center;" id = "dp">
+                    <img id = "icon_dp" src="../assets/discord party.jpg" alt="" style="width:45%;" class = "icon">
+                        <h3 style = "font-size: 40px; font-family: 'Montserrat', sans-serif;">Discord Party</h3>
+                    <p class = "desc">
+                        A Discord bot that plays a collection of minigames with your friends
+                    </p>
+                    
+                    <p class = "desc" style = "opacity: 0.75;">Developed in JavaScript (NodeJS)</p>
+                    <a href = "https://github.com/raf-aye/discord-party-archive" target="_blank">
+                        <img src =  "../assets/Programming/github-mark-white.svg" class = "github">
+                    </a>
+                </div>
+   
+            </div>
+
+            
+            <div id = "discordparty" class = "projectDesc">
+                <p>Being one of my biggest and proudest achievements, this project holds a lot of merit for me. This project was an amalgamation of previous Discord projects that I had done all the way back in 2017. This was my final Discord bot that I had developed, and I had given it my all, using all the knowledge that I had gained from previous years. I was heavily inspired by Mario Party (surprisingly enough), and initially envisioned this as a board game similar to Mario Party, however I quickly realized that it was too complicated to handle in a text-only environment, so I opted for simple minigame collections instead, which surprisingly enough was not common in Discord</p>
+                <br>
+                <p>I started development on this bot during the pandeminc in 2020 (before discord introduced Activities). I had used the library "eris", which was a much more efficient and lightweight alternative to discord.js (the package I had used before). This gave massive improvements to the stability right off the bat, as I wouldn't have to worry about unnecessary bloat that would slow down the perfomance of my chatbot, as I needed all the performance I could have if I were to be running these kinds of games.</p>
+                <br>
+                <p>Cleanliness visually was one of my goals, I wanted it to look attractive and streamlined so that anyone could pick it up and use it without much learning curve</p>
+                <br>
+                <p>Below are some examples of the design, along with some of the features of the chatbot:</p>
+                <br>
+                <i><p style = "font-size: 16px;">Lobby System</p></i>
+                <img src = "../assets/Programming/Discord Party/lobby.png" style = "transform: scale(85%);">
+                <br><br>
+                <i><p style = "font-size: 16px;">List of Commands/Minigames (there are much more miscellaneous commands on pages after)</p></i>
+                <img src = "../assets/Programming/Discord Party/help.png" style = "transform: scale(85%);">
+                <br><br>
+                <i><p style = "font-size: 16px;">Profile/Win Tracking system</p></i>
+                <img src = "../assets/Programming/Discord Party/profile.png" style = "transform: scale(85%);">
+                <br><br>
+                <p>To store information, I used a mix of MongoDB and internal structures like Sets to store information. MongoDB was used for more long term information, like the stats that you saw in the profile system, while Sets were used for temporary uses, such as infomration for minigames. One thing I wish I would have done was make the transition to a SQL database for the minigames, as if the chatbot needed to restart, then it would have the ability to resume the game once it turned back on.</p>
+                <br><br>
+                <p>I had made a total of 5 minigames, supporting both singleplayer against a bot and multiplayer with friends, a token system which allows you can buy icons for your profile, and a log to see your past 10 games and their results. After 4 months of development, I decided that the chatbot was ready to be released to the public. After it got approved, the chatbot started to join server after server, and so many people were using the bot that it actually got incorrectly flagged for spamming funnily enough. On its first day up, the bot had joined 1000 servers, which was a record for me compared to my earlier projects, and on the first day too? Simply amazing.</p>
+                <br><br>
+                <p>In the middle of the chatbot's life, I had included some more features,  including 2 more minigames (Matchup and Hangman), more icon customization, and a new language option. With the help of 2 users, I had translated the text of the bot into Spanish and Italian. This was a first for me, as all of my bots were in English, and it really helped me learned the ins and outs of localization and how it works, especially in games and other applications.</p>
+                <br><br>
+                <p>However, I could not keep the bot up forever. I was getting much more busy with high school, and the costs to keep it up and running was too much, and it was experiencing instability issues with how many servers it was actually joining. So in early 2022 I decided to pull the plug on the server hosting the chatbot, and there ends the journey of one of my most ambitious projects. I was incredibly proud of it though. It taught me how to manage a community and how to appease fans, and how to create an app that is both novel and easy to use, both of which are incredibly important in modern app design. At it's peak, the bot had reached a server count of 7,269 servers and 16,000 users, which is an astonishing number if you really think about it. My small app that I had made as a hobby project was being enjoyed by over 10,000 people.</p>
+                <br><br>
+                <i><p style = "font-size: 16px;">Discord Party's statistics, based on MongoDB Documents</p></i>
+                <img src = "../assets/Programming/Discord Party/stats.png" style = "transform: scale(85%);">
+                <br><br>
+                <p>Discord has changed a lot these past years. They introduced a new feature called "Activities" which allow you to play games and do other activities with your friends, which was the mission of my bot. They also introduced this new feature called "Slash Commands", a new framework that all bots must follow (and that my chatbot did not). With these two things combined, I don't think I'll revisit this chatbot anytime soon, atleast not to rework it from the ground up. However, I am glad for everything I had experieneced related to this bot and I am proud of my work and how it touched so many people all over the world.</p>
+            </div>
+
+        </div>
+    </body>
+</html>
