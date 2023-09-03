@@ -63,11 +63,40 @@
   .column {
     flex: 20%;
     padding: 5px;
+    transition: opacity .2s, visibility .2s;
   }
 
   .column2 {
-    flex: 25%;
+    flex: 20%;
     padding: 5px;
+    transition: opacity .2s, visibility .2s;
   }
+
+  .img__description {
+    font-family: 'Montserrat', sans-serif;
+    color:whitesmoke;
+    font-size: 24px;
+
+   
+    background: rgba(64, 77, 85, 0.72);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-200%);
+    text-align: center;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+  .column:hover .img__description {
+    visibility: visible;
+  opacity: 1;
+  }
+
+  .column2:hover .img__description {
+    visibility: visible;
+  opacity: 1;
+  }
+
 
  
