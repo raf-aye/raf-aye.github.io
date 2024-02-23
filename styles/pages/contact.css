@@ -11,7 +11,7 @@
     font-style: normal;
 }
 
-p {
+.reach {
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -24,9 +24,48 @@ p {
 .smalldesc {
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
     text-align: left;
     margin-left: 75px;
 }
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.contact-method i {
+    margin-right: 10px;
+    color: white;
+}
+
+.contact-method {
+    flex-basis: calc(33.33% - 50px); 
+    margin: 25px;
+    display: flex;
+    align-items: center; 
+}
+
+.contact-method p {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.contact-method a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
 
 a {
     font-size: 22px;
@@ -36,5 +75,74 @@ a:hover {
     color: lightblue;
   }
 
+.submit {
+    font-family: "Nunito";
+    font-size: 25px;
+    color: whitesmoke;
+    background-color: transparent;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 25px;
+    padding-bottom:25px;
+    transform: translateX(43%);
+  
+    padding-bottom: auto;
+    border: 1px solid whitesmoke;
+    border-width: 5px;
+    border-radius: 25px;
+    animation-fill-mode: forwards;  
+    transition: 0.25s;
+}
 
+.submit:hover {cursor: pointer; transform: scale(105%) translateX(40%);}
 
+input {
+    font-family: "Nunito";
+    font-size: 25px;
+    color: whitesmoke;
+    background-color: transparent;
+    padding-bottom: auto;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.info-input {
+    width: 55%;
+    
+    margin: 20px;
+    margin-right: 150px;
+    height: 40px; /* You can adjust the height as needed */
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in width */
+    resize: none; /* Disable resizing */
+    
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    margin-left: 15%;
+    display: inline-block;
+    width: 150px;
+}
+
+.message-input {
+    width: 80%;
+    height: 300px; /* Adjust height as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+    transform: translateX(10%);
+
+    font-family: "Nunito";
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: transparent;
+    padding-bottom: auto;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+}

@@ -15,6 +15,7 @@
     <script defer src="./scripts/script.js"></script>
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
     <title>Contact</title>
+    <script src="https://kit.fontawesome.com/d51ccace95.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         <!--
         if (screen.width <= 699) {
@@ -41,13 +42,53 @@
             </nav>
     </header>
     <div id="about" class="container">
-        <p>You can contact me through these methods:</p>
-        <p class = "smalldesc">Email: <a href = "mailto:rafay.b075@gmail.com" target = "_blank">&nbsp&nbsprafay.b075@gmail.com</a></p>
+        <p class = "reach">You can contact me through these methods:</p>
+        <div class="contact-container" style = "transform: translate(7%);">
+            <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <p>Email: <a href="mailto:rafay.b075@gmail.com" target="_blank">rafay.b075@gmail.com</a></p>
+            </div>
+            <div class="contact-method">
+                <i class="fab fa-discord"></i>
+                <p>Discord: <a href="https://discord.com/users/262410813254402048" target="_blank">ThatMajesticGuy</a></p>
+            </div>
+            <div class="contact-method">
+                <i class="fab fa-github"></i>
+                <p>Github: <a href="https://github.com/raf-aye" target="_blank">raf_aye</a></p>
+            </div>
+        </div>
+        <p class = "reach">Reach Out!</p>
+    <form action="https://formspree.io/f/mvoerorr" method="POST">
+        <div>
+            <label>
+                First Name:
+            </label>
+                <input type="first" name="first" class = "info-input">
+            
+        </div>
+        <div>
+            <label>
+                Last Name:
+            </label>
+                <input type="last" name="last" class = "info-input">
+            
+        </div>
+        <div>
+            <label>
+                Email:
+            </label>
+                <input type="email" name="email" class = "info-input">
+           
+        </div>
         
-        <p class = "smalldesc">Discord: <a href = "https://discord.com/users/262410813254402048" target = "_blank">&nbsp&nbspThatMajesticGuy</a></p>
-        <p class = "smalldesc">Github: <a href = "https://github.com/raf-aye" target = "_blank">&nbsp&nbspraf_aye</a></p>
-        <p class = "smalldesc">Instagram: <a href = "https://www.instagram.com/raf_aye/" target = "_blank">&nbsp&nbsp@raf_aye</a></p>
-        
+ 
+    <textarea name="message" class = "message-input"></textarea>
+  
+ <br><br>
+ <button class = "submit">Send</button>
+ <br><br>
+</form>
+
     </div>
 </body>
 
