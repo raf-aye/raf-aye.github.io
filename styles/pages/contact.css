@@ -10,6 +10,7 @@
     font-weight: bold;
     font-style: normal;
 }
+body { overflow-x:hidden; }
 
 .reach {
     color: whitesmoke;
