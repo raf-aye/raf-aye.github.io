@@ -31,19 +31,15 @@ document.querySelector('.prev').addEventListener('click', () => {
 
 
 function showProjects() {
-    // Hide all projects
+
     projects.forEach(project => {
         project.classList.remove('active')
         project.classList.add('hidden')
     });
 
-
-
-        // Move to the next project
         const nextProject1 = projects[currentSlide * 2];
         void nextProject1.offsetWidth;
         
-        // Apply the transition
         nextProject1.classList.remove("hidden")
 
         nextProject1.classList.add('active');
