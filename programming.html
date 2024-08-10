@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./styles/ui/header.css">
         <link rel="stylesheet" href="./styles/ui/fade.css">
         <script defer src="./scripts/script.js"></script>
+        <script defer src="./scripts/carousel.js"></script>
         <link rel="icon" type="image/x-icon" href="./assets/logo.png">
         <title style="font-size: 0;">Programming</title>
         <script type="text/javascript">
@@ -36,65 +37,84 @@
                         <li><a href="./programming.html">Programming</a></li>
                         <li><a href="./media.html">Visual Media</a></li>
                         <li><a href="./contact.html">Contact</a></li>
+                       
                     </ul>
                 </nav>
         </header>
 
-       <div class = "projects" id = "projects">
-            <a class="column" href = "projects/discordparty.html" style = "width: 27%; margin-left: 210px;">
-            
-                <div class="content" style = "text-align: center;" id = "dp">
-                    <img id = "icon_dp" src="./assets/discord party.jpg" alt="" style="width:76%;">
-                        <h3 style = "font-size: 40px; font-family: 'Montserrat', sans-serif;">Discord Party</h3>
-                    <p class = "desc">
-                        A Discord bot that plays a collection of minigames with your friends
-                    </p>
+        <div class="project-carousel">
+            <div class="projects-container">
+                <div class="projects" id="projects">
+                    <!-- Project 1 -->
+                    <div class="project-item">
+                        <a class="column" href="projects/discordparty.html">
+                            <div class="content" style="text-align: center;" id="dp">
+                                <img id="icon_dp" src="./assets/discord party.jpg" alt="" style="width:76%;">
+                                <h3 style="font-size: 40px; font-family: 'Montserrat', sans-serif;">Discord Party</h3>
+                                <p class="desc">A Discord bot that plays a collection of minigames with your friends</p>
+                                <p class="desc" style="opacity: 0.75;">Developed in JavaScript (NodeJS)</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-item">
+                        <a class="column" href="projects/spacerace.html">
+                            <div class="content" style="text-align: center;" id="sr">
+                                <img id="icon_sr" src="./assets/spacerace.png" alt="" style="width:100%">
+                                <h3 style="font-size: 40px; font-family: 'Montserrat', sans-serif;">Space Race</h3>
+                                <p class="desc">A sidescrolling shooter game in Unity made for Adventure GameJam 2023</p>
+                                <p class="desc" style="opacity: 0.75;">Developed in C#/Unity</p>
+                            </div>
+                        </a>
+                    </div>
                     
-                    <p class = "desc" style = "opacity: 0.75;">Developed in JavaScript (NodeJS)</p>
-                </div>
-            
+                    <div class = "project-item">
+                        <a class="column" href = "https://thatmajesticguy.itch.io/mauly-and-molly" target = "_blank">
+                            <div class="content" style = "text-align: center;" id = "m&m">
+                                <img id = "icon_tf2" src="./assets/mauly and molly.png"alt="" style="width: 68%; transform: translateY(12px);">
+                                <h3 style = "font-size: 40px; font-family: 'Montserrat', sans-serif;">Mauly<br>and Molly</h3>
+                                <p class = "desc">A roguelike hack-and-slash game made in 2 days for the ScoreSpace Game Jam</p>
+                                <p class = "desc" style = "opacity: 0.75;">Developed in C#/Unity</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class = "project-item">
+                        <a class="column" href = "https://github.com/raf-aye/wordle-godot" target = "_blank">
+                            <div class="content" style = "text-align: center;" id = "wordle">
+                                <img id = "icon_tf2" src="./assets/wordle godot.png"alt="" style="transform: translateY(12px);">
+                                <h3 style = "font-size: 40px; font-family: 'Montserrat', sans-serif;">Wordle<br>Godot Ver.</h3>
+                                <p class = "desc">A prototype Wordle clone made using Godot to test out the engine</p>
+                                <p class = "desc" style = "opacity: 0.75;">Developed in Godot/GDScript</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class = "project-item">
+                        <a class="column" href = "projects/tf2.html">
+                            <div class="content" style = "text-align: center;" id = "tf2">
+                                <img id = "icon_tf2" src="./assets/Team_Fortress_2_style_logo.svg"alt="" style="width:60%; transform: translateY(12px);">
+                                <h3 style = "font-size: 40px; font-family: 'Montserrat', sans-serif;">Team Fortress 2 Randomizer</h3>
+                                <p class = "desc">A randomizer randomizing weapons and cosmetics for the game Team Fortress 2</p>
+                                <p class = "desc" style = "opacity: 0.75;">Developed in HTML, CSS, and JavaScript</p>
+                            </div>
+                        </a>
+                    </div>
+                        <div class = "project-item">
+                            <a class="column" href = "projects/hac.html">
+                                <div class="content" style = "text-align: center;" id = "bs">
+                                    <img id = "icon_bs" src="./assets/hac.png" alt="" style="width:60%">
+                                        <h3 style = "font-size: 40px; font-family: 'Montserrat', sans-serif;">Home Access Scrapper</h3>
+                                        <p class = "desc">A scrapper of Home Access Center that lets you see your grades from a terminal</p>
+                                        <p class = "desc" style = "opacity: 0.75;">Developed in Javascript (NodeJS)</p>
+                                </div>
+                            </a>
+                        </div>
             </div>
-
-            
-            <a class="column" href = "projects/spacerace.html" style = "margin-top: -125px;">
-                <div class="content"  style = "text-align: center;" id = "sr">
-                    <img id = "icon_sr" src="./assets/spacerace.png" alt="" style="width:100%">
-                        <h3 style = "font-size: 40px; font-family: 'Montserrat', sans-serif;">Space Race</h3>
-                    <p class = "desc">
-                        A sidescrolling shooter game in Unity made for Adventure GameJam 2023
-                    </p>
-                    <p class = "desc" style = "opacity: 0.75;">Developed in C#/Unity</p>
-                </div>
-                <br>
+            <!-- Navigation buttons -->
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+            <div class="page-counter">
+                <span id="current-page">1</span> / <span id="total-pages">5</span>
             </div>
-
-        <br><br>
-            <a class="column" href = "projects/tf2.html" style = "margin-left: 265px;">
-                <div class="content" style = "text-align: center;" id = "tf2">
-                    <img id = "icon_tf2" src="./assets/Team_Fortress_2_style_logo.svg"alt="" style="width:60%; transform: translateY(12px);">
-                    <h3 style = "font-size: 40px; font-family: 'Montserrat', sans-serif;">TF2 Randomizer</h3>
-                    <p class = "desc">
-                        A randomizer randomizing weapons and cosmetics for the game Team Fortress 2
-                    </p>
-
-                    <p class = "desc" style = "opacity: 0.75;">Developed in HTML, CSS, and JavaScript</p>
-                </div>
-            </div>
-
-
-            <a class="column" href = "projects/hac.html">
-                <div class="content" style = "text-align: center;" id = "bs">
-                    <img id = "icon_bs" src="./assets/hac.png" alt="" style="width:60%">
-                        <h3 style = "font-size: 40px; font-family: 'Montserrat', sans-serif;">Home Access Scrapper</h3>
-                        <p class = "desc">
-                            A scrapper of Home Access Center that lets you see your grades from a terminal
-                        </p>
-    
-                        <p class = "desc" style = "opacity: 0.75;">Developed in Javascript (NodeJS)</p>
-                </div>
-            </div>
-
-          
         </div>
 
         

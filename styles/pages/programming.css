@@ -19,159 +19,98 @@ body {
   scroll-behavior: smooth;
 }
 
-img { width: 1028px; height: 256px; object-fit: contain;}
-
-/* padding for whole body */
-.projects {
-  padding: 50px;
-}
-.container {
-  margin: auto;
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
-h2 {
-  color: whitesmoke;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  margin-left: 50px;
-  margin-right: 450px;
+
+.project-carousel {
   text-align: center;
-  transform: translate(20%, 50%);
-}
-h3 {
-  font-family: 'Montserrat', sans-serif;
-}
-/* anchor tag decoration */
-a {
-  text-decoration: none;
-  color: #5673C8;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
 }
 
-a:hover {
-  color: lightblue;
+.projects-container {
+  display: inline-block; 
+  text-align: left; 
 }
 
-/* paragraph tag decoration */
-.desc {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
+.project-item {
+  display: inline-block; 
+  vertical-align: top; 
+  width: 35%; 
+  margin-left: 10.7%;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: fadeIn 1s;
 }
 
-/* row and column decoration */
-.row {
-  margin: 0px 28px;
-  padding: 28px;
-  
+.project-item.hidden {
+  opacity: 0;
+  display: none; 
+  animation: fadeIn 1s;
 }
 
-.row > .column {
-  padding: 26px;
+.project-item.active {
+  opacity: 1;
+  display: inline-block;
+  animation: fadeIn 1s;
 }
 
-.column {
-  float: left;
-  width: 25%;
-  margin-left: 17%;
-  margin-bottom: 5%;
+.page-counter {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color: whitesmoke;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* content decoration */
+
 .content {
   font-family: "Nunito";
   color: whitesmoke;
   background-color: transparent;
   padding: 25px;
-
-  padding-bottom: auto;
   border: 1px solid whitesmoke;
   border-width: 5px;
   border-radius: 25px;
-  animation-fill-mode: forwards;  
-  transition: 0.25s;
-  
+  transition: transform 0.25s ease-in-out;
+  text-align: center;
 }
 
-.content:hover {cursor: pointer; transform: scale(105%)}
-
-.translate { 
-  -webkit-animation: moveLeft 1s ease-out normal; -moz-animation: moveLeft 1s ease-out normal; -o-animation: moveLeft 1s ease-out normal; animation: moveLeft 1s ease-out normal;
-  animation-fill-mode: forwards;
- }
-
- .translateContent {
-  -webkit-animation: moveContent 0.5s ease-out normal; -moz-animation: moveContent 0.5s ease-out normal; -o-animation: moveContent 0.5s ease-out normal; animation: moveContent 0.5s ease-out normal;
-  animation-fill-mode: forwards;
- }
-
-.translateDesc {
-  -webkit-animation: moveDesc 1s ease-out normal; -moz-animation: moveDesc 1s ease-out normal; -o-animation: moveDesc 1s ease-out normal;
-  animation: moveDesc 1s ease-out normal;
-  animation-fill-mode: forwards;
+.content:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
-.translateImg {
-  -webkit-animation: moveImg 1s ease-out normal; -moz-animation: moveImg 1s ease-out normal; -o-animation: moveImg 1s ease-out normal;
-  animation: moveImg 1s ease-out normal;
-  animation-fill-mode: forwards;
-
-  float: left; scale: 75%;
-}
- .projectDesc {
-  font-size: 18px;
-  color: whitesmoke;
-  font-family: "Nunito";
-  float: right;
- }
-
-
-
-@keyframes moveLeft {
-  0% { opacity: 1}
-  50% {opacity: 0; transform: translateX(100px)}
-  100% { opacity: 0; transform: translateX(1300px); display: none; }
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-
-@keyframes moveContent {
-  25% {
-    width: 250%;
-  }
-  100% {
-    width: 360%;
-    margin-left: -60px;
-    padding-top: 10px;
-    transform: translate(var(--width), var(--height));
-  }
+.prev {
+  left: 10px;
 }
 
-@keyframes moveDesc {
-  0% {opacity: 0; transform: translateY(-200%);}
-  100% {opacity: 1; transform: translateY(-200%);}
+.next {
+  right: 10px;
 }
 
-@keyframes moveImg { 
-
-  100% {transform: translate(-250px, -7px);}
-}
-
-/* window size 850 width set */
-@media screen and (max-width: 850px) {
-  .column {
-      width: 50%;
-  }
-}
-
-/* window size 400 width set */
-@media screen and (max-width: 400px) {
-  .column {
-      width: 100%;
-  }
+@keyframes fadeIn {
+  from { opacity: 0; transform: rotateX(-10deg)}
+  to { opacity: 1; transform: rotateX(0) }
 }
